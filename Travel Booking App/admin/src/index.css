@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.image {
+  width: 120px;
+  height: 60px;
+  margin: 0 20px;
+}
+
+.image>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.container {
+  margin-top: 8%;
+  padding-bottom: 40px;
+}
+
+.input-group {
+  margin: 34px 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #11697b86;
+  transition: 0.5s;
+}
+
+.link:hover {
+  color: #191919;
+}
+
+.link>span {
+  color: #46458C;
+}
+
+body {
+  background-color: #c3b9ec55
+}
+
+.add-form {
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.add-image {
+  height: 400px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.add-image>img {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px #d0daddb7;
+}
+
+.add-image .input-file {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.add-image .input-file>label {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-image .input-file>input {
+  display: none;
+}
+
+.icons {
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.span {
+  color: #001c309f;
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+.span.mr-3 {
+  margin-right: 10px;
+}
+
+.edit-icon {
+  color: #22A699;
+  cursor: pointer;
+}
+
+.del-icon {
+  color: #e81616;
+  cursor: pointer;
+}
+
+@media (max-width:890px) {
+  .container {
+    margin-top: 26%;
+  }
+
+  .lists {
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: #fff;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+
+  .lists .nav-link {
+    color: #40128B;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 20px;
+  }
+
+  .lists.open {
+    padding: 18px 14px;
+    height: auto;
+  }
+
+  .icons {
+    display: block;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

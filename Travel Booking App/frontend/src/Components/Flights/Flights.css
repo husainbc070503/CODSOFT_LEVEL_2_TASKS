@@ -1,0 +1,50 @@
+.span {
+    color: #06113C;
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.span.mr-3 {
+    margin-right: 10px;
+}
+
+.Typography.section-heading {
+    margin-bottom: 30px;
+    position: relative;
+    color: #FF5F00;
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Typography.section-heading::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin: auto;
+    width: 5%;
+    height: 2px;
+    background: #FF5F00;
+    margin: 0 20px;
+}
+
+.book-link {
+    text-decoration: none;
+    background: #FF5F00;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 4px;
+}
+
+.link-box{
+    margin: 12px 0 20px 12px;
+    margin-top: 0px;
+}
+
+@media (max-width:890px) {
+    .Typography.section-heading::before {
+        width: 15%;
+    }
+}

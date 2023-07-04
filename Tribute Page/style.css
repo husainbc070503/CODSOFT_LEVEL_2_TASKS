@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000000;
+}
+
+header {
+    padding: 5% 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 6vw;
+    color: transparent;
+    background: linear-gradient(90deg, #ead55a, hsl(117, 94%, 41%));
+    background-size: 30%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: move 4s linear infinite alternate;
+    margin-bottom: 25px;
+}
+
+header h3 {
+    font-size: 2vw;
+    color: #02e1ff;
+}
+
+header h5 {
+    color: #D8D8D8;
+    margin-top: 25px;
+}
+
+@keyframes move {
+    from {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 100%;
+    }
+}
+
+.image {
+    width: 80%;
+    max-width: 90%;
+    margin: 30px auto;
+    height: 600px;
+    padding: 30px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px #ffffff4b;
+}
+
+.content {
+    width: 80%;
+    max-width: 90%;
+    margin: 8% auto;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin: 0 auto;
+    height: 1.5px;
+    background: #FFF;
+}
+
+.content h2 {
+    font-size: 3vw;
+    color: #fff;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: #ffffff92;
+}
+
+.content p {
+    text-align: justify;
+    margin: 20px 0;
+    color: #e3f6ffa3;
+    line-height: 2rem;
+}
+
+footer {
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 1vw;
+    color: #D8D8D8;
+}
+
+footer p {
+    letter-spacing: 2px;
+}
+
+footer i {
+    color: crimson;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 880px) {
+    header h1 {
+        font-size: 10vw;
+    }
+
+    header h3 {
+        font-size: 6vw;
+        line-height: 2.5rem;
+    }
+
+    header h5 {
+        font-size: 4vw;
+    }
+
+    .content h2 {
+        font-size: 8vw;
+    }
+
+    .content::after {
+        bottom: -16px;
+    }
+
+    footer {
+        font-size: 4vw;
+    }
+}

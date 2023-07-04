@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url('../../images/backimg-transformed.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.intro-container {
+    padding: 4% 0;
+}
+
+.Typography.heading {
+    font-size: 40px;
+    text-align: center;
+    color: #EEEEEE;
+    margin: 20px 0;
+}
+
+.Typography.text {
+    color: #ccd1e4a8;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.filter-card {
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: #dc5f009c;
+}
+
+@media (max-width:890px) {
+    .wrapper {
+        height: 120vh;
+    }
+
+    .intro-container {
+        padding-top: 14%;
+    }
+
+    .Typography.heading {
+        font-size: 26px;
+    }
+
+    .Typography.text {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,23 @@
+.about-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.Typography.title {
+    text-align: center;
+    line-height: 3rem;
+    font-size: 26px;
+    color: #064ACB;
+    font-weight: bold;
+}
+
+.Typography.content {
+    text-align: justify;
+    color: #707680;
+}
+
+.Typography.content>span {
+    display: block;
+    margin: 20px 0;
+}

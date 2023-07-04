@@ -1,0 +1,34 @@
+.service-card {
+    box-shadow: 0 10px 30px #89a4c765;
+    border-radius: 8px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card>img {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0.6;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.service-card:hover img {
+    transform: scale(1.2);
+}
+
+.Typography.service-title {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: transparent;
+    background: linear-gradient(90deg, #1509ef, #003355);
+    background-clip: text;
+    font-weight: bold;
+    -webkit-background-clip: text;
+}
